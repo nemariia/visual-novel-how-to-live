@@ -1,0 +1,121 @@
+.title {
+    position: relative;
+    top: -50px;
+    left: 25px;
+    width: 800px;
+    height: 500px;
+    margin: auto;
+}
+
+.title p {
+    display: inline-block;
+    font-family: alcotton;
+    font-weight: 100;
+    font-size: 70px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 20px white, 1px 1px 20px cyan, 2px 2px 20px #066, -1px -1px 20px white, -2px -2px 20px white;
+}
+
+.title p:nth-child(8) {
+    animation-name: anim16;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-end;
+    -moz-animation-name: anim16;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-name: anim16;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes anim16 {
+    0% {
+        opacity: 1;
+    }
+    10% {
+        opacity: .0;
+    }
+    20% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .0;
+    }
+    60% {
+        opacity: 1;
+    }
+    70% {
+        opacity: .0;
+    }
+    75% {
+        opacity: 1;
+    }
+    80% {
+        opacity: .0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes anim16 {
+    0% {
+        opacity: 1;
+    }
+    10% {
+        opacity: .0;
+    }
+    20% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .0;
+    }
+    60% {
+        opacity: 1;
+    }
+    70% {
+        opacity: .0;
+    }
+    75% {
+        opacity: 1;
+    }
+    80% {
+        opacity: .0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes anim16 {
+    0% {
+        opacity: 1;
+    }
+    10% {
+        opacity: .0;
+    }
+    20% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .0;
+    }
+    60% {
+        opacity: 1;
+    }
+    70% {
+        opacity: .0;
+    }
+    75% {
+        opacity: 1;
+    }
+    80% {
+        opacity: .0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
