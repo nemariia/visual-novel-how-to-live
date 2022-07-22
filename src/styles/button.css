@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Karton-Regular;
+    src: url(../fonts/Karton-Regular.ttf);
+}
+
+button {
+  color: white;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Karton-Regular;
+  font-size: 25px;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
+  border-radius: 10px;
+  background-color: #000;
+  cursor: pointer;
+}
