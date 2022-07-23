@@ -3,7 +3,14 @@
     src: url(../fonts/Karton-Regular.ttf);
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 button {
+  margin-top: 25px;
   color: white;
   letter-spacing: 2px;
   text-decoration: none;

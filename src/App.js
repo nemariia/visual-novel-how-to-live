@@ -6,9 +6,11 @@ function App() {
   return (
     <main className="App">
       <Title />
-      <Button text="играть" />
-      <Button text="авторы" />
-      <Button text="музыка" />
+      <div className="menu">
+        <Button text="играть" />
+        <Button text="авторы" />
+        <Button text="музыка" />
+      </div>
     </main>
   );
 }
