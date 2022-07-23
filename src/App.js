@@ -1,18 +1,26 @@
+import React from 'react';
 import './App.css';
-import Title from './Title.js';
-import Button from './Button.js';
+import StartScreen from './StartScreen';
+import Scene from './Scene.js';
 
-function App() {
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {screen: "startscreen"};
+    this.play = this.play.bind(this);
+  }
+
+  play() {
+    this.setState({screen: "play"});
+  }
+
+  render() {
   return (
     <main className="App">
-      <Title />
-      <div className="menu">
-        <Button text="играть" />
-        <Button text="авторы" />
-        <Button text="музыка" />
-      </div>
+      { this.state.screen === "startscreen" ? <StartScreen play={this.play}/> : <Scene />}
     </main>
-  );
+    )
+  }
 }
 
 export default App;
