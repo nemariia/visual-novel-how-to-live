@@ -5,7 +5,7 @@ import TextSlider from './TextSlider.js';
 class Scene extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {scene: "", text: [], count: 0}
+		this.state = {scene: "", text: [], count: 0};
 	}
 
 	componentDidMount() {
@@ -22,7 +22,7 @@ class Scene extends React.Component {
 	render() {
 		return (
 			<section className={this.state.scene}>
-				<TextSlider />
+				<TextSlider textArray={this.state.text}/>
 			</section>
 		)
 	}
