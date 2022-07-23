@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-button {
+.menu_button {
   margin-top: 25px;
   color: white;
   letter-spacing: 2px;
