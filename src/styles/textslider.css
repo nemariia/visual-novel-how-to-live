@@ -5,3 +5,7 @@
 	height: 50px;
 	border-width: 0;
 }
+
+.switch_next {
+	transform: rotate(180deg);
+}

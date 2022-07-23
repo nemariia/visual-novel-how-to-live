@@ -7,7 +7,7 @@ class Switch extends React.Component {
 	}
 
 	render() {
-		return <button className="switch"></button>;
+		return <button className={this.props.direction == "next"? "switch switch_next" : "switch"}></button>;
 	}
 }
 
