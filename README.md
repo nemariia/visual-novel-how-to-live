@@ -1,19 +1,19 @@
-#How to Live
+# How to Live
 
 This is a little game in the visual novel genre.
 
 ![Main character image](./public/about.png)
 
-##Plot
+## Plot
 
 Difficulty finding a job, bureaucratic delays, social isolation. A common situation, only brought to the point of absurdity. What you would do?
 
-##Authors
+## Authors
 
 Text, programming, music, some images - Mariia Nebesnaya (me)
 Character design, some other images - Diana Mishina
 
-##Little Backstory
+## Little Backstory
 
 I made it as a diploma project when I was studying in Printing and Publishing college.
 
