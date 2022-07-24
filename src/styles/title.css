@@ -3,12 +3,6 @@
     src: url(../fonts/alcotton.ttf);
 }
 
-body {
-    background-image: url(../images/title_background.png);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-}
-
 .title {
     margin: auto;
 }

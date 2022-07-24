@@ -1,6 +1,7 @@
 import React from 'react';
 import Title from './Title.js';
 import Button from './Button.js';
+import './styles/startscreen.css';
 
 class StartScreen extends React.Component {
     constructor(props) {

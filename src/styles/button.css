@@ -24,3 +24,7 @@
   background-color: #000;
   cursor: pointer;
 }
+
+.menu_button:nth-last-child(-n+1) {
+  margin-bottom: 25px;
+}
