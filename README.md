@@ -11,6 +11,7 @@ Difficulty finding a job, bureaucratic delays, social isolation. A common situat
 ## Authors
 
 Text, programming, music, some images - Mariia Nebesnaya (me)
+
 Character design, some other images - Diana Mishina
 
 ## Little Backstory
