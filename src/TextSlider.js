@@ -1,5 +1,6 @@
 import React from 'react';
 import Switch from './Switch.js';
+import Button from './Button.js';
 import './styles/textslider.css';
 
 class TextSlider extends React.Component {
@@ -35,6 +36,7 @@ class TextSlider extends React.Component {
 				<p className="text">{ this.state.text }</p>
 				<Switch onClick={this.handleClick} direction="previous"/>
 				<Switch onClick={this.handleClick} direction="next"/>
+				<Button text="дальше" />
 			</section>
 		)
 	}
