@@ -13,17 +13,21 @@ class TextSlider extends React.Component {
 	handleClick(e) {
 		if(e.target.classList.contains("switch_next")) {
 			console.log("must show next text");
-			this.setState((state, props) => ({
+			if(this.props.textArray.length > this.state.count + 1){
+				this.setState((state, props) => ({
   				text: props.textArray[state.count + 1],
   				count: state.count + 1
 			}));
+			}
 		}
 		else if(!e.target.classList.contains("switch_next")) {
 			console.log("must show previous text");
-			this.setState((state, props) => ({
-  				text: props.textArray[state.count - 1],
-  				count: state.count - 1
-			}));
+			if(-1 < this.state.count - 1){
+				this.setState((state, props) => ({
+  					text: props.textArray[state.count - 1],
+  					count: state.count - 1
+				}));
+			}
 		}
 		else {
 			console.log("something unexpected just happened");
