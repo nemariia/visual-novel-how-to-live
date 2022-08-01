@@ -36,7 +36,7 @@ class TextSlider extends React.Component {
 
 	render() {
 		return (
-			<section>
+			<section className="text_slide">
 				<p className="text">{ this.state.text }</p>
 				<section className="text_controls">
 					<Switch onClick={this.handleClick} direction="previous"/>
