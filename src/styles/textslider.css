@@ -9,3 +9,9 @@
 .switch_next {
 	transform: rotate(180deg);
 }
+
+.text_controls {
+	display: flex;
+	flex-direction: column;
+  	align-items: center;
+}
