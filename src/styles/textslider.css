@@ -11,11 +11,19 @@
 }
 
 .text_controls {
+	flex: 1;
 	display: flex;
 	flex-direction: column;
-  	align-items: center;
+  	align-items: flex-end;
 }
 
 .text_slide {
+	display: flex;
+	padding: 5px 25px;
 	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.text {
+	flex: 4;
+	text-align: left;
 }
