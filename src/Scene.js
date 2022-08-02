@@ -7,7 +7,7 @@ class Scene extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {scene: "", text: [], count: 0};
-		this.increaseCount = this.increaseCount.bind(this);
+		this.nextScene = this.nextScene.bind(this);
 	}
 
 	componentDidMount() {
@@ -27,10 +27,15 @@ class Scene extends React.Component {
 		}))
 	}
 
+	nextScene() {
+		this.increaseCount();
+		this.setScene();
+	}
+
 	render() {
 		return (
 			<section className={`${this.state.scene} scene`}>
-				<TextSlider textArray={this.state.text} nextScene={this.increaseCount}/>
+				<TextSlider textArray={this.state.text} nextScene={this.nextScene}/>
 			</section>
 		)
 	}
