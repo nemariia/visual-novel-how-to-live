@@ -6,7 +6,7 @@ import './styles/scene.css';
 class Scene extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {scene: "", text: [], count: 0};
+		this.state = {scene: "", text: [], characters: [], count: 0};
 		this.nextScene = this.nextScene.bind(this);
 	}
 
@@ -14,11 +14,26 @@ class Scene extends React.Component {
 		this.setScene();
 	}
 
+	componentDidUpdate() {
+		this.setCharacters();
+	}
+
 	setScene() {
 		this.setState((state) => ({
   			scene: data[state.count].scene,
-  			text: data[state.count].text
+  			text: data[state.count].text,
+  			characters: data[state.count].characters
 		}));
+	}
+
+	setCharacters() {
+		if(this.state.characters != undefined) {
+			for(let i=0; i<this.state.characters.length; i++) {
+				let character = document.createElement("div");
+				character.setAttribute("id", `${this.state.characters[i]}`);
+				document.querySelector("." + this.state.scene).appendChild(character);
+			}
+		}
 	}
 
 	increaseCount() {
@@ -31,6 +46,8 @@ class Scene extends React.Component {
 		this.increaseCount();
 		this.setScene();
 	}
+
+	promisedSetState = (newState) => new Promise(resolve => this.setState(newState, resolve));
 
 	render() {
 		return (
