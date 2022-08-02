@@ -8,3 +8,45 @@
 .scene1 {
 	background-image: url("../images/bloom.png");
 }
+
+.scene2 {
+	background-image: url("../images/park.png");
+}
+
+#dorigrey {
+	z-index: 1;
+    position: absolute;
+    width: 260px;
+    height: 205px;
+    bottom: 60px;
+    left: 100px;
+    background-image: url(../images/doriall.png);
+    background-position-y: -567px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#annout {
+	z-index: 1;
+	position: absolute;
+    bottom: 0;
+    left: 420px;
+    width: 202px;
+    height: 500px;
+    background-image: url(../images/annoutall.png);
+    background-size: auto;
+    background-position: 0 0;
+    animation-name: anim_ann_out;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-start;
+}
+
+@keyframes anim_ann_out {
+    50% {
+        background-position-x: -208px;
+    }
+    100% {
+        background-position-x: 0;
+    }
+}

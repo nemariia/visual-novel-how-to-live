@@ -41,7 +41,7 @@ class TextSlider extends React.Component {
 				<section className="text_controls">
 					<Switch onClick={this.handleClick} direction="previous"/>
 					<Switch onClick={this.handleClick} direction="next"/>
-					<Button text="дальше" />
+					<Button onClick={this.props.nextScene} text="дальше" />
 				</section>
 			</section>
 		)
