@@ -26,4 +26,5 @@
 .text {
 	flex: 4;
 	text-align: left;
+	font-size: 1.5em;
 }
