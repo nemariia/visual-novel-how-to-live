@@ -8,6 +8,7 @@ class TextSlider extends React.Component {
 		super(props);
 		this.state = {text: "", count: -1};
 		this.handleClick = this.handleClick.bind(this);
+		this.handleNextScene = this.handleNextScene.bind(this);
 	}
 
 	handleClick(e) {
@@ -34,6 +35,11 @@ class TextSlider extends React.Component {
 		}
 	}
 
+	handleNextScene(e) {
+		this.setState({text: "", count: -1});
+		this.props.nextScene();
+	}
+
 	render() {
 		return (
 			<section className="text_slide">
@@ -41,7 +47,7 @@ class TextSlider extends React.Component {
 				<section className="text_controls">
 					<Switch onClick={this.handleClick} direction="previous"/>
 					<Switch onClick={this.handleClick} direction="next"/>
-					<Button onClick={this.props.nextScene} text="дальше" />
+					<Button onClick={this.handleNextScene} text="дальше" />
 				</section>
 			</section>
 		)
