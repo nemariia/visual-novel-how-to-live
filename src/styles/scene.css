@@ -9,7 +9,7 @@
 	background-image: url("../images/bloom.png");
 }
 
-.scene2 {
+.scene2, .scene3, .scene4, .scene5 {
 	background-image: url("../images/park.png");
 }
 
@@ -49,4 +49,16 @@
     100% {
         background-position-x: 0;
     }
+}
+
+#classmate {
+    position: absolute;
+    width: 267px;
+    height: 560px;
+    bottom: 0;
+    right: 200px;
+    background-image: url(../images/classmateall.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    overflow: auto;
 }
