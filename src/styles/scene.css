@@ -13,6 +13,10 @@
 	background-image: url("../images/park.png");
 }
 
+.scene6 {
+    background-image: url(../images/title_background.png);
+}
+
 #dorigrey {
 	z-index: 1;
     position: absolute;
