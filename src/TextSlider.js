@@ -43,7 +43,7 @@ class TextSlider extends React.Component {
 	render() {
 		return (
 			<section className="text_slide">
-				<p className="text">{ this.state.text }</p>
+				<p className="text">{ this.state.text } {this.props.choices ? <div><Button text={this.props.choices[0]} /> <Button text={this.props.choices[1]} /></div> : ""}</p>
 				<section className="text_controls">
 					<Switch onClick={this.handleClick} direction="previous"/>
 					<Switch onClick={this.handleClick} direction="next"/>
