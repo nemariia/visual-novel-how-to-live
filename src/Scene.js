@@ -30,7 +30,7 @@ class Scene extends React.Component {
 	}
 
 	setCharacters() {
-		if(this.state.characters != undefined) {
+		if("characters" in data[this.state.count]) {
 			for(let i=0; i<this.state.characters.length; i++) {
 				let character = document.createElement("div");
 				character.setAttribute("id", `${this.state.characters[i]}`);
