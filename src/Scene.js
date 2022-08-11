@@ -16,6 +16,9 @@ class Scene extends React.Component {
 
 	componentDidUpdate() {
 		this.setCharacters();
+		if("choices" in data[this.state.count]) {
+			console.log("has choices");
+		}
 	}
 
 	setScene() {
