@@ -6,7 +6,7 @@ import './styles/scene.css';
 class Scene extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {scene: "", text: [], characters: [], count: 0};
+		this.state = {scene: "", text: [], characters: [], choices: [], count: 0};
 		this.nextScene = this.nextScene.bind(this);
 	}
 
@@ -16,16 +16,14 @@ class Scene extends React.Component {
 
 	componentDidUpdate() {
 		this.setCharacters();
-		if("choices" in data[this.state.count]) {
-			console.log("has choices");
-		}
 	}
 
 	setScene() {
 		this.setState((state) => ({
   			scene: data[state.count].scene,
   			text: data[state.count].text,
-  			characters: data[state.count].characters
+  			characters: data[state.count].characters,
+  			choices: data[state.count].choices
 		}));
 	}
 
@@ -55,7 +53,7 @@ class Scene extends React.Component {
 	render() {
 		return (
 			<section className={`${this.state.scene} scene`}>
-				<TextSlider textArray={this.state.text} nextScene={this.nextScene}/>
+				<TextSlider textArray={this.state.text} nextScene={this.nextScene} choices={this.state.choices}/>
 			</section>
 		)
 	}
